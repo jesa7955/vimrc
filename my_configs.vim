@@ -17,9 +17,9 @@ let g:ale_rust_rls_toolchain = 'stable'
 let g:ycm_rust_src_path = $RUST_SRC_PATH
 
 " Snippets trigger configuration.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<c-j>"
+" let g:UltiSnipsJumpForwardTrigger="<c-j>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " You complete me
 let g:ycm_global_ycm_extra_conf = '/home/litong/.vim_runtime/my_plugins/YouCompleteMe/.ycm_extra_conf.py'
