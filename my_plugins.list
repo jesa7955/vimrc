@@ -1,11 +1,24 @@
-https://github.com/rdnetto/YCM-Generator.git
-https://github.com/nsf/gocode.git
-https://github.com/tpope/vim-fireplace.git
-https://github.com/Valloric/YouCompleteMe.git
-https://github.com/scrooloose/nerdtree.git
-https://github.com/junegunn/vim-github-dashboard.git
-https://github.com/lervag/vimtex.git
-https://github.com/fatih/vim-go.git
-https://github.com/SirVer/ultisnips.git
-https://github.com/junegunn/vim-easy-align.git
-https://github.com/honza/vim-snippets.git
+ https://github.com/l04m33/vlime.git
+ https://github.com/prabirshrestha/async.vim.git
+ https://github.com/prabirshrestha/vim-lsp.git
+ https://github.com/rdnetto/YCM-Generator.git
+ https://github.com/nsf/gocode.git
+ https://github.com/tpope/vim-fireplace.git
+ https://github.com/kovisoft/slimv.git
+ https://github.com/google/vim-jsonnet.git
+ https://github.com/Valloric/YouCompleteMe.git
+ https://github.com/ross/requests-futures
+ https://github.com/Valloric/ycmd
+ https://github.com/PythonCharmers/python-future
+ https://github.com/certifi/python-certifi
+ https://github.com/chardet/chardet
+ https://github.com/kjd/idna
+ https://github.com/requests/requests
+ https://github.com/urllib3/urllib3
+ https://github.com/scrooloose/nerdtree.git
+ https://github.com/junegunn/vim-github-dashboard.git
+ https://github.com/lervag/vimtex.git
+ https://github.com/fatih/vim-go.git
+ https://github.com/SirVer/ultisnips.git
+ https://github.com/junegunn/vim-easy-align.git
+ https://github.com/wlangstroth/vim-racket.git
