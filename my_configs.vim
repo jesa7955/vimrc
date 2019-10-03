@@ -9,12 +9,12 @@ let g:ale_fixers = {
             \   'c': ['clang-format'],
             \   'cpp': ['clang-format'],
             \}
-let g:ale_linters['python'] = ['flake8', 'mypy']
+let g:ale_linters['python'] = ['pylint', 'flake8', 'mypy']
 let g:ale_linters['c'] = ['clang']
 let g:ale_linters['cpp'] = ['clang', 'cpplint']
 let g:ale_fix_on_save = 1
 let g:ale_rust_rls_toolchain = 'stable'
-let g:ycm_rust_src_path = $RUST_SRC_PATH
+" let g:ycm_rust_src_path = $RUST_SRC_PATH
 
 " Snippets trigger configuration.
 let g:UltiSnipsExpandTrigger="<c-j>"
@@ -22,7 +22,23 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 " let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " You complete me
-let g:ycm_global_ycm_extra_conf = '/home/litong/.vim_runtime/my_plugins/YouCompleteMe/.ycm_extra_conf.py'
+" let g:ycm_global_ycm_extra_conf = '/home/litong/.vim_runtime/my_plugins/YouCompleteMe/.ycm_extra_conf.py'
 
 " vimtex
 let g:vimtex_compiler_latexmk = {'callback' : 0}
+
+" vim-lsp
+if executable('clangd')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'clangd',
+        \ 'cmd': {server_info->['clangd', '-background-index']},
+        \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+        \ })
+endif
+if executable('pyls')
+     au User lsp_setup call lsp#register_server({
+         \ 'name': 'pyls',
+         \ 'cmd': {server_info->['pyls']},
+         \ 'whitelist': ['python'],
+         \ })
+ endif
